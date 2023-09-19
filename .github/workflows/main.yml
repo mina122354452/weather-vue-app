@@ -23,6 +23,6 @@ jobs:
 
       - name: Run my script with secret
         env:
-          MY_SECRET: ${{ secrets.API_KEY_WEATHER
- }}
-        run: node your_script.js
+          MY_SECRET: ${{ secrets.API_KEY_WEATHER}}
+        run: index-584d7cd1.js
+
