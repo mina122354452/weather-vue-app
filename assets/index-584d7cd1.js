@@ -3849,10 +3849,11 @@ const Al = (e, t) => {
 			fetchWeather(e) {
 				e.key == "Enter" &&
 					fetch(
-						`${this.url_base}weather?q=${this.url_query.value}&appid=${this.api_Key}`
+						`${this.url_base}weather?q=${process.env.API_KEY_WEATHER
+}&appid=${this.api_Key}`
 					)
 						.then(
-							(t) => (console.log(this.url_query.value), t.json())
+							(t) => (console.log(), t.json())
 						)
 						.then(this.setResults);
 			},
