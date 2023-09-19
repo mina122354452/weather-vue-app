@@ -3854,7 +3854,6 @@ const Al = (e, t) => {
 					)
 						.then(
 							console.log(process.env.MY_SECRET)
-							(t) => (console.log(), t.json())
 						)
 						.then(this.setResults);
 			},
